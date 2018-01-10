@@ -343,8 +343,8 @@
 			'</tr>';
             for (var i = 0; i < 15 && i < data.length; i++) {
                 append_data = '<tr class="contest-data">' +
-						'<th scope="row">' + data[i].vagas + '</th>' +
 						'<td>' + '<a href="' + data[i].link + '">' + data[i].nome + '</a></td>' +
+						'<th scope="row">' + data[i].vagas + ' vagas</th>' +
 						'<td>' + data[i].profissionais + '</td>' +
 						'<td><h5>' + data[i].estado.toUpperCase() + '</h5></td>' + 
 					'</tr>';

@@ -595,22 +595,41 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
 
 /*Search Engine*/
 .contest-bar {
-    width: 90%;
+    /* Firefox */
+    width: -moz-calc(95% - 45px);
+    /* WebKit */
+    width: -webkit-calc(95% - 45px);
+    /* Opera */
+    width: -o-calc(95% - 45px);
+    /* Standard */
+    width: calc(95% - 45px);
     display: inline-block;
     /*white-space:nowrap;*/
     margin-left: 10px;
-    margin-right: -12px;
+    margin-right: 0px;
     margin-top: 20px;
     position:relative;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.contest-data {
+    word-wrap: break-word;
+}
+
+.only-mobile {
+    display: none;
 }
 
 .search-button {
     display: inline-block;
     /*white-space:nowrap;*/
     margin-right: auto;
-    margin-left: -12px;
+    margin-left: -4px;
     position:relative;
     width: 45px;
+    height: 34px;
+    margin-top: -1px;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .float-center {

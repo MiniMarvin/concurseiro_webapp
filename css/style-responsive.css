@@ -46,31 +46,16 @@
         /*z-index: 1005;*/
     }
     /*Search Engine*/
-    .contest-bar {
-        width: 60%;
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-left: 10px;
-        margin-right: -10px;
-        margin-top: 20px;
-        position:relative;
-    }
-    .search-button {
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-right: auto;
-        margin-left: -10px;
-        position:relative;
-        width: 45px;
-    }
     
     .float-center {
-        /*margin-right: auto;*/
+        margin-left: 5%;
+        margin-right: 5%;
         /*margin-bottom: 20px;*/
         position:relative;
-        width: 100%;
+        width: 19000%;
         height: 120px;
         background-color: rgba(44, 55, 73, 0.9);
+        border-radius: 10px;
     }
 
     .sidebar-toggle-box{
@@ -221,31 +206,14 @@
     }
     
     /*Search Engine*/
-    .contest-bar {
-        width: 83%;
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-left: 10px;
-        margin-right: -10px;
-        margin-top: 20px;
-        position:relative;
-    }
     
-    .search-button {
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-right: auto;
-        margin-left: -10px;
-        position:relative;
-        width: 45px;
-    }
     
     .float-center {
-        margin-left: 28%;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         /*margin-bottom: 20px;*/
         position:relative;
-        width: 45%;
+        width: 90%;
         height: 120px;
         background-color: rgba(44, 55, 73, 0.9);
         border-radius: 10px;
@@ -259,9 +227,9 @@
 
 }
 @media (max-width: 479px) {
-    body{
-        margin-top:80px !important;
-    }
+    /*body{*/
+    /*    margin-top:80px !important;*/
+    /*}*/
     .header{
         position: relative !important;
 
@@ -402,42 +370,89 @@
     }
     
     /*Search Engine*/
-    .contest-bar {
-        width: 76%;
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-left: 10px;
-        margin-right: -10px;
-        margin-top: 20px;
-        position:relative;
-    }
     
-    .search-button {
-        display: inline-block;
-        /*white-space:nowrap;*/
-        margin-right: auto;
-        margin-left: -10px;
-        position:relative;
-        width: 45px;
-    }
     
-    .float-center {
-        margin-left: 28%;
-        margin-right: auto;
+    /*.float-center {*/
+    /*    margin-left: 5%;*/
+    /*    margin-right: 5%;*/
         /*margin-bottom: 20px;*/
-        position:relative;
-        width: 45%;
-        height: 120px;
-        background-color: rgba(44, 55, 73, 0.9);
-        border-radius: 10px;
-    }
+    /*    position:relative;*/
+    /*    width: 19000%;*/
+    /*    height: 120px;*/
+    /*    background-color: rgba(44, 55, 73, 0.9);*/
+    /*    border-radius: 10px;*/
+    /*}*/
     
-    .search-estado {
-        width: 80px;
-        margin-top: 15px;
-        margin-left: 10px;
-    }
+    /*.search-estado {*/
+    /*    width: 80px;*/
+    /*    margin-top: 15px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
 
 }
 
 
+/* Responsive tables */
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  
+{
+
+	 /*Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		border-radius: 10px;
+	}
+	
+	 /*Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		display: none;
+	}
+	
+	th {
+	    width: 100%;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		 /*Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		 /*Now like a table header */
+		position: absolute;
+		 /*Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	.only-mobile {
+	    display: block;
+	    text-align: center;
+	    color: #999;
+	    margin-bottom: 15px;
+	}
+	
+	/*Label the data*/
+	
+	/*td:nth-of-type(1):before { content: "Vagas: "; }*/
+	/*td:nth-of-type(2):before { content: "Concurso: "; }*/
+	/*td:nth-of-type(3):before { content: "Escolaridade: "; }*/
+	/*td:nth-of-type(4):before { content: "Estado: "; }*/
+}
