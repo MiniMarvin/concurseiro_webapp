@@ -1,4 +1,7 @@
 # Bot Concurseiro
+
+Preview em: https://minimarvin.github.io/concurseiro_webapp/
+
 ### Descrição
 Essa aplicação é um bot que se propõe a deixar disponível para os usuários os concursos abertos no Brasil, seja esse concurso público, científico ou mesmo de poesia, alertando os usuários sempre que um novo concurso estiver aberto ou quando estiver perto de fechar. Essas atualizações serão feitas por meio de inscrições do usuário no sistema e o objetivo é fazer com que cada usuário tenha uma conta fazendo com que o sistema só recomende para o usuário algo que ele provavelmente gostaria.
 
@@ -37,6 +40,8 @@ O retorno da API segue a seguinte estrutura:
 
 
 ## [EN]
+
+preview in: https://minimarvin.github.io/concurseiro_webapp/
 
 ### Descritpion
 This System is a bot which is intent to look for contests oppened in Brazil and let them online for the users, alerting them once a new contest is oppened. That will be done by subscription, wich aims to make a account for every user, allowing them to select which kind of contests they want to receive, whether it public contest, science contest, poetry contest or any other that the system be able to check in the internet. 
